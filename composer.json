@@ -1,0 +1,12 @@
+{
+    "name": "tobias74/php-simple-acl",
+    "description": "simple Access Control List writtenin php",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpSimpleAcl\\": "src/"
+        }
+    },
+    "require": {}
+}
