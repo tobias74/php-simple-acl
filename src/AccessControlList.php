@@ -67,7 +67,14 @@ class AccessControlList
 
     protected function getRolesForUser($user)
     {
-        return $this->rolesByUser[$user];
+        if (!isset($this->rolesByUser[$user]))
+        {
+            return array();
+        }
+        else
+        {
+            return $this->rolesByUser[$user];
+        }
     }
 
     // isAllowed('u213475', 'station', 'read')
